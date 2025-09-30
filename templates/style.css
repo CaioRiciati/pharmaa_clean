@@ -40,13 +40,35 @@ nav a {
     color: var(--cinza);
     font-weight: bold;
 }
-
 .hero {
-    background-color: var(--rosa);
-    text-align: center;
-    padding: 60px 20px;
+    position: relative;
+    background-image: url('../imagens/sabonetes.png');
+    background-size: cover;
+    background-position: center;
     color: var(--cinza);
+    text-align: center;
+    padding: 100px 20px;
+    z-index: 1;
+    overflow: hidden;
 }
+
+/* Overlay rosa semi-transparente */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244, 194, 194, 0.75); /* rosa com opacidade */
+    z-index: 0;
+}
+
+/* Garante que o conteúdo fique acima do overlay */
+.hero * {
+    position: relative;
+    z-index: 1;
+}
+
 
 .hero h1 {
     font-size: 36px;
@@ -118,4 +140,29 @@ footer {
     background-color: var(--verde-claro);
     color: var(--cinza);
     font-size: 14px;
+}
+
+
+.logo img {
+    height: 100px;
+    margin: -20px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.hero {
+    background-color: var(--rosa);
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--cinza);
+}
+
+
+.sabonetes-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid var(--rosa-escuro);
+    margin: auto;
 }
