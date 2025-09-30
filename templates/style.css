@@ -1,0 +1,121 @@
+/* Cores principais */
+:root {
+    --rosa: #f4c2c2;
+    --verde-claro: #d5f4e6;
+    --branco: #ffffff;
+    --cinza: #444;
+    --rosa-escuro: #e89ca4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: var(--branco);
+    color: var(--cinza);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--verde-claro);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--rosa-escuro);
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: var(--cinza);
+    font-weight: bold;
+}
+
+.hero {
+    background-color: var(--rosa);
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--cinza);
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: var(--verde-claro);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    color: var(--cinza);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.produto img {
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 2px solid var(--rosa-escuro);
+}
+
+.reserva form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reserva input,
+.reserva button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.reserva input {
+    border: 1px solid #ccc;
+}
+
+.reserva button {
+    background-color: var(--rosa-escuro);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reserva button:hover {
+    background-color: #d17b89;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--verde-claro);
+    color: var(--cinza);
+    font-size: 14px;
+}
