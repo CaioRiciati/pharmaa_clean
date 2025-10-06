@@ -2,58 +2,168 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Pharmaa Clean - Pré-venda</title>
+    <title>Pharmaa Clean - Lançamento</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+<style>
+    
+</style>
+
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="../imagens/logo.png" alt="Pharmaa Clean Logo">
-        </div>
-        <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#produto">Produto</a>
-            <a href="#reserva">Reservar</a>
-        </nav>
-    </header>
+
+<header>
+    <div class="logo">
+        <img src="../imagens/logo.png" alt="Pharmaa Clean Logo">
+    </div>
+    <nav>
+        <a class="menu" href="#sobre1">Sobre</a>
+        <a  class="menu" href="#produto1">Produto</a>
+        <a class="menu" href="#quem-somos1">Quem Somos</a>
+    </nav>
+</header>
 
 <section class="hero">
-    <h1>Pré-venda exclusiva</h1>
-    <p>Reserve já o seu sabonete Pharmaa Clean antes do lançamento oficial!</p>
-    <a href="#reserva" class="btn">Quero Reservar</a>
+    <div class="hero-content">
+        <h1>Falta pouco para o grande dia!!!</h1>
+        <h2>Pharma Clean: onde ciência e cuidado se encontram para transformar cada banho em inovação.</h2>
+        <a href="https://www.instagram.com/pharmaa_clean?igsh=b29peGJ3ZG5pN29t&utm_source=qr" id="sobre1" class="btn">Nosso Instagram</a>
+        <div class="contador" id="contador"></div>
+    </div>
+</section>
+
+<section id="sobre" class="section">
+    <h1>Sobre a Pharma Clean</h1>
+    <p class="texto">A Pharma Clean é uma marca de sabonetes desenvolvida com base em princípios farmacêuticos e foco no bem-estar e na qualidade. Cada produto é pensado para oferecer limpeza eficaz, fragrâncias agradáveis e fórmulas seguras para todos os tipos de pele.
+Mais do que um simples sabonete, a Pharma Clean representa cuidado, inovação e o poder de transformar ideias em realidade.
+</p>
+
+<p class="texto">Cada sabonete da Pharma Clean é resultado de pesquisa, dedicação e muita paixão pelo que fazemos. Pensamos em cada detalhe — da fórmula ao aroma — para garantir qualidade, segurança e bem-estar em cada uso.</p>
+<p id="produto1"></p>
 </section>
 
 
-    <section id="sobre" class="section">
-        <h2>Sobre a Pharmaa Clean</h2>
-        <p>Inspirada na leveza, autocuidado e saúde, a Pharmaa Clean oferece produtos naturais, artesanais e dermatologicamente testados. Nosso primeiro lançamento é um sabonete pensado para todos os tipos de pele.</p>
-    </section>
 
-    <section id="produto" class="section produto">
-        <h2>O Sabonete</h2>
-        <img src="../imagens/sabonetes.png" alt="Sabonetes Pharmaa Clean" class="sabonetes-img">
-        <p>Produzido com ingredientes naturais, aroma suave e fórmula hidratante. Ideal para seu momento de autocuidado.</p>
-    </section>
+<section id="produto" class="section produto">
+    <h1>Nosso produto</h1>
 
-    <section id="reserva" class="section reserva">
-        <h2>Reserve o seu</h2>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+    <h3 class="subtitulo">Sabonete de Coco</h3>
+    <p class="texto">
+        Formulado para quem busca uma pele mais macia e nutrida, o sabonete de coco da Pharma Clean é rico em agentes hidratantes naturais.
+    </p>
+    <p class="texto"><strong>Benefícios:</strong></p>
+    <ul class="texto">
+        <li>Hidrata profundamente e ajuda a reter a umidade da pele</li>
+        <li>Deixa o toque suave e sedoso</li>
+        <li>Possui ação calmante, ideal para peles sensíveis</li>
+        <li>Promove uma limpeza delicada sem ressecar</li>
+    </ul>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+    <hr>
 
-            <label for="quantidade">Quantidade:</label>
-            <input type="number" id="quantidade" name="quantidade" min="1" required>
+    <h3 class="subtitulo" > Sabonete de Frutas Vermelhas</h3>
+    <p class="texto">
+        Com uma fragrância envolvente e propriedades revitalizantes, o sabonete de frutas vermelhas foi desenvolvido para deixar a pele renovada e perfumada.
+    </p>
+    <p class="texto"><strong>Benefícios:</strong></p>
+    <ul class="texto">
+        <li>Rica ação antioxidante, que ajuda a proteger a pele contra o envelhecimento precoce</li>
+        <li>Sensação refrescante e energizante durante o banho</li>
+        <li>Limpeza eficaz com espuma cremosa</li>
+        <li>Aroma doce e vibrante que perfuma por horas</li>
+    </ul>
 
-            <button type="submit">Reservar Agora</button>
-        </form>
-    </section>
+    <div class="imagens">
+        <img src="../imagens/sabonetes.png" class="sabonetes" alt="Sabonete de Frutas Vermelhas Pharmaa Clean">
+    
+        <img class="sabonetes"  src="../imagens/maos.jpeg" alt="">
+    </div >
+    <p id="quem-somos1"></p>
+</section>
 
-    <footer>
-        <p>&copy; 2025 Pharmaa Clean - Todos os direitos reservados</p>
-    </footer>
+
+
+
+<section id="quem-somos" class="section quem-somos">
+    <h1>Quem Somos</h1>
+    <p class="texto">Somos um grupo de estudantes de Farmácia apaixonados por inovação, ciência e cuidado com as pessoas. A Pharma Clean nasceu do nosso desejo de colocar em prática o que aprendemos em sala de aula e mostrar que o conhecimento pode gerar impacto real. Criamos a marca especialmente para a Feira de Empreendedorismo, com o objetivo de unir aprendizado, criatividade e propósito.</p>
+    <img src="../imagens/equipe.png" class="equipe" alt="Nossa equipe">
+</section>
+
+
+<footer>
+    <p>&copy; 2025 Pharmaa Clean - Todos os direitos reservados</p>
+</footer>
+
+<script>
+    // Define a data de lançamento: dia 10 às 10h
+    const dataLancamento = new Date("2025-10-10T10:00:00-03:00").getTime();
+
+    const contador = document.getElementById("contador");
+
+    function atualizarContador() {
+        const agora = new Date().getTime();
+        const tempoRestante = dataLancamento - agora;
+
+        if (tempoRestante <= 0) {
+            contador.textContent = "Lançamento iniciado!";
+            clearInterval(intervalo);
+            return;
+        }
+
+        const dias = Math.floor(tempoRestante / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((tempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((tempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((tempoRestante % (1000 * 60)) / 1000);
+
+        contador.textContent = `${dias}d ${horas}h ${minutos}min ${segundos}s`;
+    }
+
+    const intervalo = setInterval(atualizarContador, 1000);
+    atualizarContador();
+</script>
+
+<script>
+    function criarBolhas(numBolhas) {
+    const bolhas = [];
+    for(let i = 0; i < numBolhas; i++) {
+        const bolha = document.createElement('div');
+        bolha.classList.add('bolha');
+
+        // Tamanho relativo à largura da tela
+        const size = Math.min(Math.random() * 60 + 20, window.innerWidth / 8);
+        bolha.style.width = `${size}px`;
+        bolha.style.height = `${size}px`;
+
+        // Posição aleatória na tela
+        bolha.style.left = `${Math.random() * window.innerWidth}px`;
+        bolha.style.top = `${Math.random() * window.innerHeight}px`;
+
+        // Velocidade aleatória
+        const duration = Math.random() * 20 + 10;
+        bolha.style.animationDuration = `${duration}s`;
+        bolha.style.animationDelay = `${Math.random() * 20}s`;
+
+        document.body.appendChild(bolha);
+        bolhas.push(bolha);
+    }
+    return bolhas;
+}
+
+// Inicializa bolhas
+let bolhas = criarBolhas(50);
+
+// Reposiciona bolhas ao redimensionar a tela
+window.addEventListener('resize', () => {
+    bolhas.forEach(bolha => {
+        const size = Math.min(parseFloat(bolha.style.width), window.innerWidth / 8);
+        bolha.style.width = `${size}px`;
+        bolha.style.height = `${size}px`;
+        bolha.style.left = `${Math.random() * window.innerWidth}px`;
+        bolha.style.top = `${Math.random() * window.innerHeight}px`;
+    });
+});
+</script>
+
 </body>
 </html>
